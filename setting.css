@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html {padding: 0; margin: 0;}
+
+body{
+    background-color: rgb(33, 74, 187);
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.cont{
+    padding: 15px;
+}
+
+.logo{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: rgb(235, 186, 82);
+    
+    
+}
+
+h1{
+    padding-top: 0;
+    text-align: center;
+    color: rgb(235, 186, 82);
+    font-size: 140px; 
+}
+header{
+    width: 100%;
+    background-color: rgb(5, 27, 87);
+    padding: 15px;
+}
+
+.sfondo{
+    width: 100%;
+    height: auto;
+}
+
+
+#menu{
+    background-color:rgb(8, 60, 109);
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+
+#menu li{
+    display: inline-block;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+#menu li a {
+    color: rgb(235, 186, 82);
+    margin: 130px;
+}
+
+.immagine.colonna{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: left;
+    
+}
+
+.grid{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col33{
+    
+    width: 30%;
+    padding: 15px;
+}
+
+.col70{
+    
+    width: 70%;
+    padding: 15px;
+}
+
+a{
+    text-decoration:  none;
+    color: black;
+}
+
+p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 40px;
+    padding: 0px 30px 30px 30px;
+    
+
+}
+
+.spaziatore{
+    background-color: rgb(235, 186, 82);
+    width: 100%;
+    height: 20px;
+}
+
+
+footer{
+    padding: 10px;
+    background-color:rgb(255, 255, 255);
+    
+}
+
+footer ul {
+    text-align: center;
+    
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 15px;
+    
+}
