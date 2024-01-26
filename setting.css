@@ -104,7 +104,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .hero{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('immagini/gwen.jpg');
     background-size: cover  ;
     }
 
@@ -156,7 +156,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .bg-cover{
     display: flex;
     padding: 100px, 0; 
-    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.6)), url('ari_sfondo.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.6)), url('immagini/ari_sfondo.jpg');
     background-size: cover  ;
     align-items: center;
     z-index: 0  ;
@@ -206,7 +206,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     line-height: 350px;
     text-align: center;
     margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('immagini/gwen.jpg');
     background-size: cover  ;
     margin-right: 20px;
     box-shadow: grey 10px 10px;
