@@ -106,7 +106,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .hero{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 0.8)), url('link/gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
     background-size: cover  ;
     }
 
@@ -158,7 +158,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .bg-cover{
     display: flex;
     padding: 100px, 0; 
-    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('link/gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
     background-size: cover  ;
     align-items: center;
     z-index: 0  ;
@@ -208,7 +208,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     line-height: 350px;
     text-align: center;
     margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('link/moonlit-glenkeeper-shadow-isles-runeterra-4k-wallpaper-uhdpaper.com-830@1@i.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/moonlit-glenkeeper-shadow-isles-runeterra-4k-wallpaper-uhdpaper.com-830@1@i.jpg');
     background-size: cover  ;
     margin-right: 20px;
 
