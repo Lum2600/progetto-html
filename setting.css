@@ -47,11 +47,7 @@ p{line-height: 20px; color: #666; font-variant: 300px;}
 
 ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display: block;list-style-type: disc;margin-inline-start: 0px;margin-inline-end: 0px;}
 
-<<<<<<< HEAD
-.menu{height: min-content;}
-=======
 
->>>>>>> 2ebec6b22ddd6a34b3644ecf16a216c2b72649d4
 .menu li{display: inline-block;}
 .menu li a{color: rgb(255, 255, 255); padding: 15px; display: block; margin-top: 35px;}
 
@@ -59,26 +55,10 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 @media (max-width: 750px) {
    
 
-<<<<<<< HEAD
-    
-=======
   
->>>>>>> 2ebec6b22ddd6a34b3644ecf16a216c2b72649d4
     .menu{
         position: absolute; top: 0; right:-100%;
         background: rgb(0, 0, 0); 
-<<<<<<< HEAD
-        height: 100vh;
-        width: 100%;
-        padding-top: 80px; 
-        transition: all 1s cubic-bezier(.215, .61, .355, 1);   
-         
-    }
-    .menu li{display: block;}
-
-    .menu--open{right: 0%; }
-    .ham{
-=======
         width: 100%; height: 100vh;
         padding-top: 80px;
       transition: all 1s cubic-bezier(.215, .61, .355, 1); 
@@ -87,7 +67,6 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     }
     .menu li{display: block;}
 
->>>>>>> 2ebec6b22ddd6a34b3644ecf16a216c2b72649d4
 
     .ham{
         display: block;
@@ -127,7 +106,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .hero{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 0.8)), url('link/gwen.jpg');
     background-size: cover  ;
     }
 
@@ -179,7 +158,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .bg-cover{
     display: flex;
     padding: 100px, 0; 
-    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('link/gwen.jpg');
     background-size: cover  ;
     align-items: center;
     z-index: 0  ;
@@ -229,7 +208,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     line-height: 350px;
     text-align: center;
     margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/moonlit-glenkeeper-shadow-isles-runeterra-4k-wallpaper-uhdpaper.com-830@1@i.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('link/moonlit-glenkeeper-shadow-isles-runeterra-4k-wallpaper-uhdpaper.com-830@1@i.jpg');
     background-size: cover  ;
     margin-right: 20px;
 
