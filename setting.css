@@ -1,10 +1,12 @@
 
 /* stile base*/
-
-html{overflow-x: hidden; background-color: white;}
-body{font-family: 'Inter', sans-serif; max-width: 2300px; margin: autosz\;}
+* {box-sizing: border-box;}
+html{background-color: white;}
+body{font-family: 'Inter', sans-serif;}
 body,html{padding: 0; margin: 0;}
 a{text-decoration: none;}
+
+.contenitore{max-width: 1200px; margin: auto; background-color: rgb(255, 255, 255);}
 
 h1,h2,h3,h4,h5,h6, p{color: #000; padding-bottom: 30px;}
 
@@ -28,44 +30,47 @@ p{line-height: 20px; color: #666; font-variant: 300px;}
 /* header*/
 
 .header{
-    background-color: #000;
+   
     width:100%;
-    position: fixed ;
+    
     display: flex;
-    top: 0;
-    left: 0%;
-    z-index: 1;
+    margin: auto;
+    z-index: 2;
     justify-content: space-between;
+    background: linear-gradient(0deg, rgba(0,0,0, 1), rgba(0,0,0, 1));
+    max-width: 1200px;
+        
     
 }
 
 .ham{display: none; z-index: 2;}
- 
 .logo__im{width: 10%; z-index: 4;}
-
 .menu{height:min-content;}
 
-ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display: block;list-style-type: disc;margin-inline-start: 0px;margin-inline-end: 0px;margin-right: 45%;}
+ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display: block;list-style-type: disc;margin-inline-start: 0px;margin-inline-end: 0px;}
 
-
-.menu li{display: inline-block; border-radius: 5px; border: 2px solid white; margin-top: 35px;}
-.menu li a{color: rgb(255, 255, 255); padding: 15px; display: block;}
+.menu{margin-right: 20px; margin-bottom: 20px;}
+.menu li{display: inline-block; border-radius: 5px; border: 2px solid white; margin-top: 25px; background-color: #ffffff; border: 1px solid black;}
+.menu li a{color: rgb(255, 255, 255); padding: 15px; display: block; color: #000; }
+.menu li:hover {background-color: rgb(99, 99, 99);}
 
 
 @media (max-width: 750px) {
    
 
-  
+    .header{position: fixed ;}
     .menu{
-        position: absolute; top: 0; right:-100%;
-        background: rgb(0, 0, 0); 
+        position: absolute; top: 0; right:-150%;
+        background: linear-gradient(0deg, rgba(0,0,0, 0.8), rgba(0,0,0, 0.5 )), url('immagini/bilgewater.jpg');
+        background-size: cover;
         width: 100%; height: 100vh;
         padding-top: 80px;
-      transition: all 1s cubic-bezier(.215, .61, .355, 1); 
+        transition: all 1s cubic-bezier(.215, .61, .355, 1); 
       
       
     }
-    .menu li{display: block;}
+    .menu li{display: block; text-align: center; width: 50%; margin: auto; margin-top: 25%; }
+    
 
 
     .ham{
@@ -73,8 +78,10 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
         width: 30px;
         height: 30px;
         position: fixed;
-        top: 40px;
+        top: 25px;
         right: 40px ;
+        
+        
     }
 
     .ham span{
@@ -86,7 +93,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     
     }
 
-    .menu--open{right: 0;}
+    .menu--open{right: 0; margin: 0;}
     
     .logo__im{width: 30%;}
 
@@ -106,7 +113,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .hero{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
     background-size: cover  ;
     }
 
@@ -115,9 +122,10 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     width: 100%;
     max-width: 1350px;
     margin: 0 auto;
+    padding: 0px 50px;
 }
 
-.hero__content h1,
+.hero__content h1{text-align: center; color: white;}
 .hero__content p{color: white; text-align: justify;}
 
 
@@ -132,7 +140,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 }
 
 .poster__content{width: 35%; padding:50px;}
-.poster__img{width: 65%; height: 100%;}
+.poster__img{width: 65%; height: 100vh;}
 .immagine-poster{object-fit: cover; width: 100%; height: 100%;}
 
 
@@ -146,6 +154,11 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     }
     .poster__img,
     .poster__content{width: 100%; height: auto;}
+    .poster__content h3{font-size: 20px;}
+    .hero {padding-top: 50%; padding-bottom: 20%;}
+    .hero__content{width: 100%; padding-bottom: 10px; padding-top: 20px;}
+    .hero__content p{font-size: 15px; text-align: center;}
+    .big-text{font-size: 20px; padding-bottom: 0%;} 
     
     
 }
@@ -172,13 +185,17 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 
 .bg-cover__title{flex-wrap: wrap; right: 50%; width: 50%; padding: 50px;display: flex;align-items: center;text-align: center; display: flex;}
 .bg-cover__title h3{text-align: center; width: 100%; padding: 0; margin: 10px;}
-.bg-cover__title p{text-align: center; width: 100%; padding: 90px; padding-top: 0;}
+.bg-cover__title p{text-align: center; width: 100%; padding: 90px; padding-top: 0; color: #ffffff;}
 
 @media (max-width:1350px) {
     
-    .bg-cover{flex-wrap: wrap; height: auto;}
-    .bg-cover__text,
-    .bg-cover__title{width: 100%;right: 0;transform: translateX(0);}
+    .bg-cover{flex-wrap: wrap; height: auto; background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('immagini/canelupo.jpg'); background-size: cover  ; }
+    .bg-cover__title {width: 100%;}
+    .bg-cover__title p{text-align: center;padding: 0;}
+    
+    .bg-cover__text {text-align: center; width: 100%;}
+    
+
     
 }
 
@@ -372,7 +389,7 @@ footer{
     margin-top: 100px;
     width: 100%;
     height: auto;
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     padding-top: 50;
     padding-bottom: 50;
 }
