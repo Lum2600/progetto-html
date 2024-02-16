@@ -1,8 +1,8 @@
 
 /* stile base*/
 
-html{overflow-x: hidden}
-body{font-family: 'Inter', sans-serif;}
+html{overflow-x: hidden; background-color: white;}
+body{font-family: 'Inter', sans-serif; max-width: 2300px; margin: autosz\;}
 body,html{padding: 0; margin: 0;}
 a{text-decoration: none;}
 
@@ -35,7 +35,7 @@ p{line-height: 20px; color: #666; font-variant: 300px;}
     top: 0;
     left: 0%;
     z-index: 1;
-    
+    justify-content: space-between;
     
 }
 
@@ -45,11 +45,11 @@ p{line-height: 20px; color: #666; font-variant: 300px;}
 
 .menu{height:min-content;}
 
-ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display: block;list-style-type: disc;margin-inline-start: 0px;margin-inline-end: 0px;}
+ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display: block;list-style-type: disc;margin-inline-start: 0px;margin-inline-end: 0px;margin-right: 45%;}
 
 
-.menu li{display: inline-block;}
-.menu li a{color: rgb(255, 255, 255); padding: 15px; display: block; margin-top: 35px;}
+.menu li{display: inline-block; border-radius: 5px; border: 2px solid white; margin-top: 35px;}
+.menu li a{color: rgb(255, 255, 255); padding: 15px; display: block;}
 
 
 @media (max-width: 750px) {
@@ -106,7 +106,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .hero{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 0.8)), url('link/gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
     background-size: cover  ;
     }
 
@@ -118,7 +118,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 }
 
 .hero__content h1,
-.hero__content p{color: white;}
+.hero__content p{color: white; text-align: justify;}
 
 
 /* ! poster */
@@ -158,7 +158,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .bg-cover{
     display: flex;
     padding: 100px, 0; 
-    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('link/gwen.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('immagini/canelupo.jpg');
     background-size: cover  ;
     align-items: center;
     z-index: 0  ;
@@ -168,9 +168,11 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 
 .bg-cover__text{width: 50%; padding: 30px; justify-content: right}
 
+.bg-cover__text h4  {text-align: center;}
+
 .bg-cover__title{flex-wrap: wrap; right: 50%; width: 50%; padding: 50px;display: flex;align-items: center;text-align: center; display: flex;}
 .bg-cover__title h3{text-align: center; width: 100%; padding: 0; margin: 10px;}
-.bg-cover__title p{text-align: center; width: 100%;}
+.bg-cover__title p{text-align: center; width: 100%; padding: 90px; padding-top: 0;}
 
 @media (max-width:1350px) {
     
@@ -187,6 +189,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 
 .grid{display: flex; max-width: 1350px; padding: 0 30px; margin: 0 auto; }
 .grid .col{width: 100%;}
+.grid .col-dx{width: 100%; margin: auto;}
 
 
 @media (max-width: 768px) {
@@ -200,7 +203,10 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 
 .main-carousel{padding: 40px 0px;}
 
-.carousel-cell{
+
+
+
+.bandle-city-cell{
     height: 350px;
     width: 350px; 
     background-color: #666;
@@ -208,13 +214,153 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     line-height: 350px;
     text-align: center;
     margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('link/moonlit-glenkeeper-shadow-isles-runeterra-4k-wallpaper-uhdpaper.com-830@1@i.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/bandle-city.jpg');
     background-size: cover  ;
     margin-right: 20px;
-
-
-
-
+}
+.bilgewater-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/bilgewater.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.demacia-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/demacia.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.ionia-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/ionia.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.frejlord-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/frejlord.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.isola-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/isole_ombra.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.ixtal-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/ixtal.jpeg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.noxus-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/noxus.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.piltover-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/piltover.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.shurima-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/shurima.png');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.targon-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/targon.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.void-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/void.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
+}
+.zaun-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/zaun.jpg');
+    background-size: cover  ;
+    margin-right: 20px;
 }
 
 
@@ -222,17 +368,21 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 
 
 
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: grey;
+    padding-top: 50;
+    padding-bottom: 50;
+}
+.footer__content{
+    width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
+.footer__content h3, p{
+    text-align: center;
+}
 
 
 
