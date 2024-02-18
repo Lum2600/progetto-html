@@ -6,11 +6,12 @@ body{font-family: 'Inter', sans-serif;}
 body,html{padding: 0; margin: 0;}
 a{text-decoration: none;}
 
-.contenitore{max-width: 1200px; margin: auto; background-color: rgb(255, 255, 255);}
+.contenitore{max-width: 2200px; margin: auto; background-color: rgb(255, 255, 255); border: 10px solid rgb(0, 0, 0); border-top: 0px; }
 
 h1,h2,h3,h4,h5,h6, p{color: #000; padding-bottom: 30px;}
 
 p{line-height: 20px; color: #666; font-variant: 300px;}
+.giga-text{font-size: 120px; font-weight:bold;}
 .big-text{font-size: 70px; font-weight:bold;}
 .mid-text{font-size: 40px;}
 .normal-text{font-size: 20px;}
@@ -38,7 +39,7 @@ p{line-height: 20px; color: #666; font-variant: 300px;}
     z-index: 2;
     justify-content: space-between;
     background: linear-gradient(0deg, rgba(0,0,0, 1), rgba(0,0,0, 1));
-    max-width: 1200px;
+    max-width: 2200px;
         
     
 }
@@ -52,10 +53,10 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .menu{margin-right: 20px; margin-bottom: 20px;}
 .menu li{display: inline-block; border-radius: 5px; border: 2px solid white; margin-top: 25px; background-color: #ffffff; border: 1px solid black;}
 .menu li a{color: rgb(255, 255, 255); padding: 15px; display: block; color: #000; }
-.menu li:hover {background-color: rgb(99, 99, 99);}
+.menu li:hover {background-color: rgb(175, 175, 175); transform: scale(1.1); padding: 0px 20px;}
 
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
    
 
     .header{position: fixed ;}
@@ -98,7 +99,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     .logo__im{width: 30%;}
 
     .hero__content{padding: 15px;}
-
+    .giga-text{font-size: 45px;}
     .big_text{font-size: 40px; font-weight:bold;}
     .mid_text{font-size: 20px;}
     .normal-text{font-size: 17px;}
@@ -112,7 +113,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 
 .hero{
     height: 100vh;
-    display: flex; width: 100%; align-items: center;
+    display: flex; width: 100%; align-items: top;
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
     background-size: cover  ;
     }
@@ -125,7 +126,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     padding: 0px 50px;
 }
 
-.hero__content h1{text-align: center; color: white;}
+.hero__content h1{text-align: center; color: white; margin-bottom: 180PX; margin-top: 120px;}
 .hero__content p{color: white; text-align: justify;}
 
 
@@ -155,10 +156,11 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     .poster__img,
     .poster__content{width: 100%; height: auto;}
     .poster__content h3{font-size: 20px;}
-    .hero {padding-top: 50%; padding-bottom: 20%;}
+    .hero {padding-top: 25%; padding-bottom: 20%;}
     .hero__content{width: 100%; padding-bottom: 10px; padding-top: 20px;}
     .hero__content p{font-size: 15px; text-align: center;}
     .big-text{font-size: 20px; padding-bottom: 0%;} 
+    .hero__content h1{text-align: center; color: white; margin-bottom: 20px; margin-top: 0px;}
     
     
 }
@@ -187,21 +189,52 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .bg-cover__title h3{text-align: center; width: 100%; padding: 0; margin: 10px;}
 .bg-cover__title p{text-align: center; width: 100%; padding: 90px; padding-top: 0; color: #ffffff;}
 
+
+
+/* alcuni tablet */
 @media (max-width:1350px) {
     
-    .bg-cover{flex-wrap: wrap; height: auto; background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('immagini/canelupo.jpg'); background-size: cover  ; }
-    .bg-cover__title {width: 100%;}
-    .bg-cover__title p{text-align: center;padding: 0;}
-    
-    .bg-cover__text {text-align: center; width: 100%;}
+    .big-text{font-size: 30px;}
+    .bg-cover{display: flex; flex-wrap: wrap;}
+    .poster__content h3{text-align: center;}
+    .bg-cover__title{width: 100%;}
+    .bg-cover__text{width: 100%;}
+   
     
 
     
 }
 
+/* ! telefono orizzontale */
 
+@media (max-height:768px) {
 
-
+    .poster{flex-wrap: wrap;height: auto;}
+    .poster__img,
+    .poster__content{width: 100%; height: auto;}
+    .poster__content h3{font-size: 20px;}
+    .hero {padding-top: 10%; padding-bottom: 20%;}
+    .hero__content{width: 100%; padding-bottom: 10px; padding-top: 20px;}
+    .hero__content p{font-size: 15px; text-align: center;}
+    .big-text{font-size: 20px; padding-bottom: 0%;} 
+    .hero__content h1{text-align: center; color: white; margin-bottom: 20px; margin-top: 0px;}
+    .header{height: 20%;}
+    .logo__im{width:min-content}
+    .giga-text{font-size: 35px}
+    .mt-3{margin-top: 100px}
+    .grid .col h3{text-align: center;}
+    .header{position: fixed ;}
+    .menu{position: absolute; top: 0; right:-150%;background: linear-gradient(0deg, rgba(0,0,0, 0.8), rgba(0,0,0, 0.5 )), url('immagini/bilgewater.jpg');
+        background-size: cover;width: 20%; height: 100vh;padding-top: 80px;transition: all 1s cubic-bezier(.215, .61, .355, 1); border-left: 10px solid rgb(255, 255, 255); overflow-y: hidden;}
+    .menu li{display: block; text-align: center; width: 50%; margin: auto; margin-top: 25%; z-index: 10; }
+    .ham{display: block;width: 30px;height: 30px;position: fixed;top: 25px;right: 40px ;}
+    .ham span{display: block;margin-bottom: 5px;height: 3px;width: 100%;background: white;}
+    .menu--open{right: 0; margin: 0;}
+    .contenitore{border: 0px solid red;}
+    .menu li:hover {background-color: rgb(175, 175, 175); transform: scale(1.1); padding: 0px 20px;}
+  
+    
+}
 /* ! grid */
 
 .grid{display: flex; max-width: 1350px; padding: 0 30px; margin: 0 auto; }
@@ -218,7 +251,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 
 /* ! carousel */
 
-.main-carousel{padding: 40px 0px;}
+.main-carousel{padding-top: 40px; padding-bottom: 40px; padding-left: 10px;}
 
 
 
@@ -380,6 +413,87 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     margin-right: 20px;
 }
 
+
+/* ! hero per varie pagine */
+
+.hero-bandlecity{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/bandle-city.jpg');
+    background-size: cover  ;
+}
+.hero-bilgewater{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/bilgewater.jpg ');
+    background-size: cover  ;
+}
+.hero-demacia{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/demacia.jpg');
+    background-size: cover  ;
+}
+.hero-frejlord{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/frejlord.jpg ');
+    background-size: cover  ;
+}
+.hero-ionia{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/ionia.jpg');
+    background-size: cover  ;
+}
+.hero-isoleombra{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/isole_ombra.jpg ');
+    background-size: cover  ;
+}
+.hero-ixtal{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/ixtal.jpeg ');
+    background-size: cover  ;
+}
+.hero-noxus{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/noxus.jpg ');
+    background-size: cover  ;
+}
+.hero-piltover{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/piltover.jpg ');
+    background-size: cover  ;
+}
+.hero-shurima{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/shurima.png ');
+    background-size: cover  ;
+}
+.hero-targon{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/targon.jpg ');
+    background-size: cover  ;
+}
+.hero-void{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/void.jpg ');
+    background-size: cover  ;
+}
+.hero-zaun{
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/zaun.jpg ');
+    background-size: cover  ;
+}
 
 
 
