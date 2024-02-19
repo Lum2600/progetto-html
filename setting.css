@@ -1,12 +1,12 @@
 
 /* stile base*/
 * {box-sizing: border-box;}
-html{background-color: white;}
+html{background-color: white; ;}
 body{font-family: 'Inter', sans-serif;}
 body,html{padding: 0; margin: 0;}
 a{text-decoration: none;}
 
-.contenitore{max-width: 2200px; margin: auto; background-color: rgb(255, 255, 255); border: 10px solid rgb(0, 0, 0); border-top: 0px; }
+.contenitore{max-width: 2200px; margin: auto; background-color: rgb(255, 255, 255); border: 0px solid rgb(0, 0, 0);}
 
 h1,h2,h3,h4,h5,h6, p{color: #000; padding-bottom: 30px;}
 
@@ -31,9 +31,8 @@ p{line-height: 20px; color: #666; font-variant: 300px;}
 /* header*/
 
 .header{
-   
-    width:100%;
-    
+    overflow-x: hidden;
+    width:97%;
     display: flex;
     margin: auto;
     z-index: 2;
@@ -126,7 +125,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     padding: 0px 50px;
 }
 
-.hero__content h1{text-align: center; color: white; margin-bottom: 180PX; margin-top: 120px;}
+.hero__content h1{text-align: center; color: white; margin-bottom: 130PX; margin-top: 120px;}
 .hero__content p{color: white; text-align: justify;}
 
 
@@ -207,7 +206,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 
 /* ! telefono orizzontale */
 
-@media (max-height:768px) {
+@media (max-height:58px) {
 
     .poster{flex-wrap: wrap;height: auto;}
     .poster__img,
