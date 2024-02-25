@@ -96,9 +96,23 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .poster__content h3{text-align: center;}
 .poster__img{width: 65%; height: 100vh;box-shadow: 5px 5px 5px 5px #000000;}
 .immagine-poster{object-fit: cover; width: 100%; height: 100%;}
+th{
+    text-align: left;
+    border: 1px solid red;
+}
+tr{
+    text-align: center;
+}
 
 
+/* ! tabella*/
 
+.tabella_personaggi {table-layout: fixed; width: 90%; padding: 50px; border: 2px solid black; border-collapse: collapse; margin: auto; margin-top: 100px;   }
+.tabella_personaggi caption {margin:0 auto; text-align: center; padding: 50px 0px; font-size: 60px; font-weight:bold;}
+.tabella_personaggi th{border: 1px solid rgb(0, 0, 0);padding: 20px; text-align: center; font-size: 40px;}
+.tabella_personaggi td{border: 1px solid rgb(0, 0, 0);padding: 20px; text-align: center; font-size: 15px;}
+
+table{margin: auto;}
 /* ! poster elenco*/
 
 
@@ -115,7 +129,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .poster__content-elenco{width: 30%; padding:50px; padding-top: 0; padding-bottom: 0%;}
 .poster__content-elenco h3{text-align: center; padding-top: 0px; margin-top: 20px; padding-bottom: 0; margin-bottom: 0;}
 .poster__img-elenco{width: 70%; height: cover;   box-shadow: -5px 5px 5px 5px #000000;}
-.poster__content-elenco p{font-size: 15px; text-align: left;}
+.poster__content-elenco p{font-size: 15px; text-align: center;}
 
 
 
@@ -304,10 +318,11 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 /* ! hero per varie pagine */
 
 .hero-bandlecity{
-    height: 100vh;
+    height: 110vh;
     display: flex; width: 100%; align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/bandle-city.jpg');
-    background-size: cover  ;
+    background-size: cover  ; 
+    margin-top: 60px;
 }
 .hero-bilgewater{
     height: 100vh;
@@ -405,14 +420,31 @@ footer{
 
 
 
-
+.s{font-weight: bolder;}
 /* ! telefono orizzontale */
 
-@media (max-height:58px) {
+@media (max-width:958px) {
+    .hero-bandlecity{
+        height: 100vh;
+        display: flex; width: 100%; align-items: center;
+        background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/bandle-city.jpg');
+        background-size: cover  ; 
+        margin-top: 60px;
+        padding: 0 10px 0 10px;
+    }
+    
+    .hero-bandlecity h1{padding-top: 20px;}
+    .hero-bandlecity p{font-size: ;}
+    
 
+
+
+    .main-carousel{margin-top: 100px;  flex-wrap: wrap;}
+    .contenitore_tabella{height: fit-content; display: block; border: 0px solid red;  }
     .poster{flex-wrap: wrap;height: auto;}
     .poster__img,
-    .poster__content{width: 100%; height: auto;}
+    .poster__content{width: 50%; height: auto;}
+    .poster__img{width: 50%; height: 100vh;}
     .poster__content h3{font-size: 20px;}
     .hero {padding-top: 10%; padding-bottom: 20%;}
     .hero__content{width: 100%; padding-bottom: 10px; padding-top: 20px;}
@@ -424,23 +456,7 @@ footer{
     .giga-text{font-size: 35px}
     .mt-3{margin-top: 100px}
     .grid .col h3{text-align: center;}
-    .header{position: fixed ;}
-    .menu{position: absolute; top: 0; right:-150%;background: linear-gradient(0deg, rgba(0,0,0, 0.8), rgba(0,0,0, 0.5 )), url('immagini/bilgewater.jpg');
-        background-size: cover;width: 20%; height: 100vh;padding-top: 80px;transition: all 1s cubic-bezier(.215, .61, .355, 1); border-left: 10px solid rgb(255, 255, 255); overflow-y: hidden;}
-    .menu li{display: block; text-align: center; width: 50%; margin: auto; margin-top: 25%; z-index: 10; }
-    .ham{display: block;width: 30px;height: 30px;position: fixed;top: 25px;right: 40px ;}
-    .ham span{display: block;margin-bottom: 5px;height: 3px;width: 100%;background: white;}
-    .menu--open{right: 0; margin: 0;}
-    .contenitore{border: 0px solid red;}
-    .menu li:hover {background-color: rgb(175, 175, 175); transform: scale(1.1); padding: 0px 20px;}
-  
-    
-}
-
-/* ! telefono verticale */
-@media (max-width: 768px) {
-   
-
+    .header{position: fixed ; height: fit-content;}
     .menu li:hover {background-color: rgb(175, 175, 175); transform: scale(0.8); padding: 0px 10px;}
     .menu{
         background-color: #000;
@@ -451,11 +467,46 @@ footer{
         margin:  0 0 10px;
 
       
-      
+    
     }
     .menu li{display: block; text-align: center; width: 50%; margin: auto; margin: 0 10px; }
     .menu a{font-size: 10px;}
+    .mt-6{margin-top: 20px;}
+    .contenitore_tabella{height: fit-content; margin-bottom: 200px;}
+    .poster__content-elenco{width: 50%; height: auto;}
+    .poster__img-elenco{width: 50%; height: 220vh; margin: auto;}
+    .tabella_personaggi {table-layout: fixed; width: 100%; padding: 50px; border: 0px solid rgb(255, 255, 255); border-collapse: collapse; }
+    table{border-collapse: collapse;}
+}
 
+/* ! telefono verticale */
+@media (max-width: 768px) {
+    
+    .tabella_personaggi {table-layout: fixed; width: 100%; padding: 0%; border-collapse: collapse;}
+    .menu li:hover {background-color: rgb(175, 175, 175); transform: scale(0.8); padding: 0px 10px;}
+    .menu{
+        background-color: #000;
+        position: fixed;
+        width: 100%; height: min-content;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1); 
+        padding: 10px;
+        margin:  0 0 10px;
+
+      
+    
+    }
+    .menu li{display: block; text-align: center; width: 50%; margin: auto; margin: 0 10px; }
+    .menu a{font-size: 10px;}
+    table{margin: auto; border-collapse: collapse; padding: 0;}
+
+    .tabella_personaggi {table-layout: fixed; width: 90%; border-collapse: collapse;  }
+    .tabella_personaggi caption {text-align: center; font-size: 60px; font-weight:bold; font-size: 40px;}
+    .tabella_personaggi th{padding: 20px 0px 20px 0px; text-align: center;border-collapse: collapse; font-size: 13px   ;}
+    .tabella_personaggi td{border: 1px solid rgb(0, 0, 0);padding: 20px; text-align: center; font-size: 10px; }
+    .contenitore_tabella{height: 100vh;}
+
+    .poster__content-elenco{width: 50%; height: auto;}
+    .poster__img-elenco{display: none;}
 
    
 
@@ -510,6 +561,7 @@ footer{
 .mt-2{margin-top: 100px;}
 .mt-3{margin-top: 150px; }
 .mt-4{margin-top: 250px; }
+.mt-6{margin-top: 400;}
 .mt-5{margin-top: 1000px; }
 
 
