@@ -1,6 +1,6 @@
 /* stile base*/
 * {box-sizing: border-box;}
-html{background-color: white; scroll-behavior: smooth;}
+html{background-color: white; scroll-behavior: smooth;animation-timeline:initial ;}
 body{font-family: 'Inter', sans-serif;}
 body,html{padding: 0; margin: 0;}
 a{text-decoration: none;}
@@ -37,7 +37,7 @@ p{line-height: 20px; color: #666; font-variant: 300px;}
     background: linear-gradient(0deg, rgba(0,0,0, 1), rgba(0,0,0, 1));
     max-width: 2200px;
     box-shadow: 0px 0px 100px #000000;
-  
+    
         
     
 }
@@ -47,7 +47,7 @@ p{line-height: 20px; color: #666; font-variant: 300px;}
 
 ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display: block;list-style-type: disc;margin-inline-start: 0px;margin-inline-end: 0px;}
 
-.menu{ justify-content: space-around;  display: flex; padding: 20px 0;}
+.menu{ justify-content: space-around;  display: flex; padding: 20px 0;  }
 .menu li{border-radius: 5px; background-color: #000000; transition: .5s;  }
 .menu li a{ padding: 15px; display: block; color: #e0e0e0; }
 
@@ -89,12 +89,13 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     height: 100vh;
     width: 100%;
     align-items: center;
+    
 
 }
 .poster__img:hover{transform: scale(0.9);}
 .poster__content{width: 35%; padding:50px; transition: .5s;}
 .poster__content h3{text-align: center;}
-.poster__img{width: 65%; height: 100vh;box-shadow: 5px 5px 5px 5px #000000;transition: .5s;}
+.poster__img{width: 65%; height:100%;box-shadow: 5px 5px 5px 5px #000000;transition: .5s;}
 .immagine-poster{object-fit: cover; width: 100%; height: 100%;}
 th{
     text-align: left;
@@ -112,7 +113,7 @@ tr{
 .tabella_personaggi th{border: 1px solid rgb(0, 0, 0);padding: 20px; text-align: center; font-size: 40px;}
 .tabella_personaggi td{border: 1px solid rgb(0, 0, 0);padding: 20px; text-align: center; font-size: 15px;}
 
-table{margin: auto;}
+table{margin: auto; border-collapse: collapse;}
 /* ! poster elenco*/
 
 
@@ -121,15 +122,16 @@ table{margin: auto;}
     flex-wrap: wrap;
     height: fit-content;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 500px;
+    height: 100vh;
     
     
     
 }
-.poster__img-elenco:hover{transform: scale(0.9);}
-.poster__content-elenco{width: 30%; padding:50px; padding-top: 0; padding-bottom: 0%;}
+.poster__img-elenco:hover{transform: scale(0.9); }
+.poster__content-elenco{width: 40%; padding:50px; padding-top: 0; padding-bottom: 0%; margin: auto;}
 .poster__content-elenco h3{text-align: center; padding-top: 0px; margin-top: 20px; padding-bottom: 0; margin-bottom: 0;}
-.poster__img-elenco{width: 70%; height: cover;   box-shadow: -5px 5px 5px 5px #000000;transition: .5s;}
+.poster__img-elenco{width: 60%; height: cover;   box-shadow: -5px 5px 5px 5px #000000;transition: .5s;}
 .poster__content-elenco p{font-size: 15px; text-align: center;}
 
 
@@ -156,7 +158,7 @@ table{margin: auto;}
 .main-carousel{padding-top: 40px; padding-bottom: 40px; padding-left: 10px;transition: .5s;margin-bottom: 60px;}
 
 
-.main-carousel:hover{transform: scale(1.1);}
+.main-carousel:hover{transform: scale(1.1); margin-bottom: 80px;}
 
 .bandle-city-cell{
     height: 350px;
@@ -171,6 +173,9 @@ table{margin: auto;}
     margin-right: 20px;
     
 }
+
+.hero-bandlecity p{padding: 5px;}
+.hero-bilgewater{padding: 5px;}
 .bilgewater-cell{
     height: 350px;
     width: 350px; 
@@ -479,6 +484,7 @@ footer{
     .poster__img-elenco{width: 50%; height: 220vh; margin: auto;}
     .tabella_personaggi {table-layout: fixed; width: 100%; padding: 50px; border: 0px solid rgb(255, 255, 255); border-collapse: collapse; }
     table{border-collapse: collapse;}
+    .poster-elenco{margin-bottom: 600px;}
 }
 
 /* ! telefono verticale */
@@ -532,7 +538,7 @@ footer{
 
     }
     .poster__img,
-    .poster__content{width: 100%; height: auto;}
+    .poster__content{width: 100%; height: auto; box-shadow: 0px 0px 100px #000000;}
     .poster__content h3{font-size: 20px;}
     .hero {padding-top: 25%; padding-bottom: 20%;}
     .hero__content{width: 100%; padding-bottom: 10px; padding-top: 20px;}
@@ -544,7 +550,8 @@ footer{
       }
     .poster__content-elenco{width: 100%;}
     .poster__img-elenco{width: 100%;}
-    .divisore{display: block; background:  url('immagini/demacia.jpg'); background-size: cover;  width: 100%; height: 25%;box-shadow: -5px 5px 5px 5px #000000;}
+    .divisore{display: block; background:  url('immagini/demacia.jpg'); background-size: cover;  width: 100%; height: 25%;box-shadow: 0px 0px 100px #000000;}
+    .poster-elenco{margin-bottom: 200px;}
 /* ! helpers */
     .mt-1{margin-top: 5px;}
     .mt-2{margin-top: 10px;}
