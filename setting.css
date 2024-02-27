@@ -128,7 +128,7 @@ table{margin: auto; border-collapse: collapse;}
     
     
 }
-.poster__img-elenco:hover{transform: scale(0.9); }
+.poster__img-elenco:hover{transform: scale(0.6);}
 .poster__content-elenco{width: 40%; padding:50px; padding-top: 0; padding-bottom: 0%; margin: auto;}
 .poster__content-elenco h3{text-align: center; padding-top: 0px; margin-top: 20px; padding-bottom: 0; margin-bottom: 0;}
 .poster__img-elenco{width: 60%; height: cover;   box-shadow: -5px 5px 5px 5px #000000;transition: .5s;}
@@ -158,7 +158,7 @@ table{margin: auto; border-collapse: collapse;}
 .main-carousel{padding-top: 40px; padding-bottom: 40px; padding-left: 10px;transition: .5s;margin-bottom: 60px;}
 
 
-.main-carousel:hover{transform: scale(1.1); margin-bottom: 80px;}
+.main-carousel:hover{transform: scale(0.9); margin-bottom: 80px;}
 
 .bandle-city-cell{
     height: 350px;
@@ -187,6 +187,7 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/bilgewater.jpg');
     background-size: cover  ;
     margin-right: 20px;
+    box-shadow: 10px;
 }
 .demacia-cell{
     height: 350px;
@@ -327,81 +328,94 @@ table{margin: auto; border-collapse: collapse;}
 .hero-bandlecity{
     height: 110vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/bandle-city.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/bandle-city.jpg');
     background-size: cover  ; 
     margin-top: 60px;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-bilgewater{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/bilgewater.jpg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/bilgewater.jpg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-demacia{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/demacia.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/demacia.jpg');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-frejlord{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/frejlord.jpg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/frejlord.jpg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-ionia{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/ionia.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/ionia.jpg');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-isoleombra{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/isole_ombra.jpg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/isole_ombra.jpg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-ixtal{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/ixtal.jpeg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/ixtal.jpeg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-noxus{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/noxus.jpg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/noxus.jpg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-piltover{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/piltover.jpg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/piltover.jpg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-shurima{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/shurima.png ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/shurima.png ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-targon{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/targon.jpg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/targon.jpg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-void{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/void.jpg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/void.jpg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 .hero-zaun{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/zaun.jpg ');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/zaun.jpg ');
     background-size: cover  ;
+    box-shadow: 5px 5px 100px 5px #000000;
 }
 
 
