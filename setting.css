@@ -302,6 +302,61 @@ table{margin: auto; border-collapse: collapse;}
 
 
 
+.ionia_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('ionia.jpg');
+    background-size: cover  ;
+}
+.bc_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('bandle-city.jpg');
+    background-size: cover  ;
+}
+.bilgewater_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('bilgewater.jpg');
+    background-size: cover  ;
+}
+.demacia_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('demacia.jpg');
+    background-size: cover  ;
+}
+.isole_ombra_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('isole_ombra.jpg');
+    background-size: cover  ;
+}
+.frejlord_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('frejlord.jpg');
+    background-size: cover  ;
+}
+.void_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('void.jpg');
+    background-size: cover  ;
+}
+.ixtal_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('ixtal.jpeg');
+    background-size: cover  ;
+}
+.noxus_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('noxus.jpg');
+    background-size: cover  ;
+}
+.piltover_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('piltover.jpg');
+    background-size: cover  ;
+}
+.shurima_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('shurima.png');
+    background-size: cover  ;
+}
+.targon_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('targon.jpg');
+    background-size: cover  ;
+}
+.zaun_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('zaun.jpg');
+    background-size: cover  ;
+}
+
+
+
 
 .bandle-city-cell{
     height: 350px;
