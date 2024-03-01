@@ -1,1 +1,0 @@
-aggiugere una parte sulla storia e sulla mappa
