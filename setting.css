@@ -294,236 +294,99 @@ table{margin: auto; border-collapse: collapse;}
 
 /* ! carousel */
 
-.main-carousel{padding-top: 40px; padding-bottom: 40px; padding-left: 10px;transition: .5s;margin-bottom: 60px;}
 
+.main-carousel{padding: 40px 0px 40px 0; }
 
-.main-carousel:hover .bandle-city-cell{transform: scale(0.9); margin-bottom: 80px;}
-
-
-
-
-.ionia_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('ionia.jpg');
+.carousel-cell{
+    height: 350px;
+    width: 350px; 
+    background-color: #666;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/gwen.jpg');
     background-size: cover  ;
+    margin-right: 20px; 
+    transition: 1.5s;
 }
+.carousel-cell:hover{background: linear-gradient(0deg, rgba(10, 20, 40, 0.9), rgba(10, 20, 40, 1)); }
+
+
+
+
+
+
+
+
 .bc_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('bandle-city.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/bandle-city.jpg');
     background-size: cover  ;
 }
 .bilgewater_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('bilgewater.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/bilgewater.jpg');
     background-size: cover  ;
 }
 .demacia_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('demacia.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/demacia.jpg');
     background-size: cover  ;
 }
 .isole_ombra_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('isole_ombra.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/isole_ombra.jpg');
     background-size: cover  ;
 }
 .frejlord_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('frejlord.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/frejlord.jpg');
     background-size: cover  ;
 }
 .void_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('void.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/void.jpg');
+    background-size: cover  ;
+}
+.ionia_bg{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/ionia.jpg');
     background-size: cover  ;
 }
 .ixtal_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('ixtal.jpeg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/ixtal.jpeg');
     background-size: cover  ;
 }
 .noxus_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('noxus.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/noxus.jpg');
     background-size: cover  ;
 }
 .piltover_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('piltover.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/piltover.jpg');
     background-size: cover  ;
 }
 .shurima_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('shurima.png');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/shurima.png');
     background-size: cover  ;
 }
 .targon_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('targon.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/targon.jpg');
     background-size: cover  ;
 }
 .zaun_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0.6)), url('zaun.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/zaun.jpg');
     background-size: cover  ;
 }
 
 
 
 
-.bandle-city-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/bandle-city.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-    
-}
-
-.hero-bandlecity p{padding: 5px;}
-.hero-bilgewater{padding: 5px;}
-.bilgewater-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/bilgewater.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-    box-shadow: 10px;
-}
-.demacia-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/demacia.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.ionia-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/ionia.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.frejlord-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/frejlord.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.isola-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/isole_ombra.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.ixtal-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/ixtal.jpeg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.noxus-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/noxus.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.piltover-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/piltover.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.shurima-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/shurima.png');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.targon-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/targon.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.void-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/void.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
-.zaun-cell{
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.6)), url('immagini/zaun.jpg');
-    background-size: cover  ;
-    margin-right: 20px;
-}
 
 
 /* ! hero per varie pagine */
 
 
+
+.hero p{ color: white; padding: 0; margin: 0 ; text-align: center;}
+.hero h1{ text-align: center;  color: goldenrod;  font-family: Bebas Neue;width: 100%; margin-bottom: 0px; }
+.hero .tit{margin: auto;  }
+.hero .testo{margin: auto; width: 100%;  margin-top: 0px;}
+.tit h1{text-align: center;}
+.testo p{margin-top: 30px; width: 50%; margin: auto;}
 
 
 
@@ -533,29 +396,76 @@ table{margin: auto; border-collapse: collapse;}
     display: flex; width: 100%; align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/bandle-city.jpg');
     background-size: cover  ; 
-    margin-top: 60px;
-    box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
+
+.hero-bandlecity p{ color: white; padding: 0; margin: auto ; text-align: center;}
+.hero-bandlecity h1{ text-align: center;  color: goldenrod;  font-family: Bebas Neue;width: 100%; margin-bottom: 0px; }
+.hero-bandlecity .tit{margin: auto;  }
+.hero-bandlecity .testo{margin: auto; width: 100%;  margin-top: 0px; }
+.tit-bandlecity h1{text-align: center;}
+.testo-bandlecity p{margin-top: 30px; width: 50%; margin: auto;}
+
+
+
 .hero-bilgewater{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/bilgewater.jpg ');
     background-size: cover  ;
-    box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
+
+.hero-bilgewater p{ color: white; padding: 0; margin: auto ; text-align: center;}
+.hero-bilgewater h1{ text-align: center;  color: goldenrod;  font-family: Bebas Neue;width: 100%; margin-bottom: 0px; }
+.hero-bilgewater .tit{margin: auto;  }
+.hero-bilgewater .testo{margin: auto; width: 100%;  margin-top: 0px;}
+.tit-bilgewater h1{text-align: center;}
+.testo-bilgewater p{margin-top: 30px; width: 50%; margin: auto;}
+
 .hero-demacia{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/demacia.jpg');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
+
+.hero-demacia p{ color: white; padding: 0; margin: auto ; text-align: center;}
+.hero-demacia h1{ text-align: center;  color: goldenrod;  font-family: Bebas Neue;width: 100%; margin-bottom: 0px; }
+.hero-demacia .tit{margin: auto;  }
+.hero-demacia .testo{margin: auto; width: 100%;  margin-top: 0px;}
+.tit-demacia h1{text-align: center;}
+.testo-demacia p{margin-top: 30px; width: 50%; margin: auto;}
+
 .hero-frejlord{
     height: 100vh;
     display: flex; width: 100%; align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/frejlord.jpg ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-ionia{
     height: 100vh;
@@ -563,6 +473,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/ionia.jpg');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-isoleombra{
     height: 100vh;
@@ -570,6 +486,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/isole_ombra.jpg ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-ixtal{
     height: 100vh;
@@ -577,6 +499,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/ixtal.jpeg ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-noxus{
     height: 100vh;
@@ -584,6 +512,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/noxus.jpg ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-piltover{
     height: 100vh;
@@ -591,6 +525,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/piltover.jpg ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-shurima{
     height: 100vh;
@@ -598,6 +538,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/shurima.png ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-targon{
     height: 100vh;
@@ -605,6 +551,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/targon.jpg ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-void{
     height: 100vh;
@@ -612,6 +564,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/void.jpg ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 .hero-zaun{
     height: 100vh;
@@ -619,6 +577,12 @@ table{margin: auto; border-collapse: collapse;}
     background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('immagini/zaun.jpg ');
     background-size: cover  ;
     box-shadow: 5px 5px 100px 5px #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 100px 15px rgba(1,10,19);
+    display: flex;
+    flex-wrap: wrap;
+  
 }
 
 
