@@ -1,5 +1,13 @@
 /* stile base*/
 * {box-sizing: border-box;}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
 html{background-color: white; scroll-behavior: smooth;animation-timeline:initial ;}
 body{font-family: 'Inter', sans-serif;}
 body,html{padding: 0; margin: 0;}
@@ -7,7 +15,7 @@ a{text-decoration: none;}
 
 .contenitore{max-width: 2200px; margin: auto; background-color: #e4fdfd; overflow-x: hidden ;}
 
-h1,h2,h3,h4,h5,h6, p{color: #000; padding-bottom: 30px;}
+h1,h2,h3,h4,h5,h6, p{color: #000; padding-bottom: 30px;font-family: Anton}
 
 p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}  
 .giga-text{font-size: 120px; font-weight:bold;}
@@ -17,11 +25,10 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
 .small-text{font-size: 14px;}
 
 .intro-text{text-transform: uppercase; font-size: 20px; font-weight: bold;}
-
+.h3{font-family: Anton; color:#463714}
 
 
 .button{padding: 18px 28px; background-color: aqua; color: black; display: inline-block; border-radius: 4px;}
-
 
 
 
@@ -48,9 +55,9 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
 
 ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display: block;list-style-type: disc;margin-inline-start: 0px;margin-inline-end: 0px;}
 
-.menu{ justify-content: space-around;  display: flex; padding: 20px 0;  }
-.menu li{border-radius: 5px; background-color: #000000; transition: .2s;  }
-.menu li a{ padding: 15px; display: block; color: #e0e0e0; }
+.menu{ justify-content: space-around;  display: flex; padding: 20px 0; background-color: #010A13 ; }
+.menu li{border-radius: 5px; background-color: #010A13; transition: .2s;  }
+.menu li a{ padding: 15px; display: block; color: #C89B3C; }
 
 
 .menu li:hover {background-color: rgb(255, 255, 255); transform: scale(1.1); padding: 0px 20px;}
@@ -65,11 +72,11 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .hero{
     height: 100vh;
     display: flex; width: 100%; align-items: top;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.9), rgba(0,0,0, 0.8)), url('immagini/gwen.jpg');
+    background: linear-gradient(0deg, rgba(1,10,19, 0.2), rgba(255, 254, 254, 1)), url('immagini/gwen.jpg');
     background-size: cover  ;
     flex-wrap: wrap;
     align-items: center;
-    box-shadow: 5px 5px 100px 5px #000000;
+    box-shadow: 5px 5px 100px 5px rgba(1,10,19);
     display: flex;
     flex-wrap: wrap;
     
@@ -111,7 +118,7 @@ tr{
 .tabella_personaggi caption {margin:0 auto; text-align: center; padding: 50px 0px; font-size: 60px; font-weight:bold;}
 .tabella_personaggi th{border: 1px solid rgb(0, 0, 0);padding: 20px; text-align: center; font-size: 40px;}
 .tabella_personaggi td{border: 1px solid rgb(0, 0, 0);padding: 20px; text-align: center; font-size: 15px;}
-.tabella_personaggi tr:hover{background-color: #666; color: #e0e0e0; transform: scale(1.1);} 
+.tabella_personaggi tr:hover{background-color: #0A323C; color: #C89B3C; transform: scale(1.1);} 
 .tabella_personaggi tr{transition: .2s;} 
 
 
@@ -124,8 +131,8 @@ table{margin: auto; border-collapse: collapse;}
     flex-wrap: wrap;
     height: fit-content;
     width: 100%;
-    margin-bottom: 500px;
-    height: 100vh;
+    margin-bottom: 100px;
+    height: fit-content;
     
     
     
@@ -135,6 +142,7 @@ table{margin: auto; border-collapse: collapse;}
 .poster__content-elenco h3{text-align: center; padding-top: 0px; margin-top: 20px; padding-bottom: 0; margin-bottom: 0;}
 .poster__img-elenco{width: 60%; height: cover;   box-shadow: -5px 5px 5px 5px #000000;transition: .5s;}
 .poster__content-elenco p{font-size: 15px; text-align: center;}
+
 
 
 
@@ -454,6 +462,7 @@ footer{
     background-color: rgb(0, 0, 0);
     padding-top: 50;
     padding-bottom: 50;
+    margin-top: 200px;
 }
 .footer__content{
     width: 100%;
@@ -506,7 +515,7 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
     .header{position: fixed ; height: fit-content;}
     .menu li:hover {background-color: rgb(175, 175, 175); transform: scale(0.8); padding: 0px 10px;}
     .menu{
-        background-color: #000;
+        background-color: #010A13 ; 
         position: fixed;
         width: 100%; height: min-content;
         transition: all 1s cubic-bezier(.215, .61, .355, 1); 
@@ -533,7 +542,7 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
     .tabella_personaggi {table-layout: fixed; width: 100%; padding: 0%; border-collapse: collapse;}
     .menu li:hover {background-color: rgb(175, 175, 175); transform: scale(0.8); padding: 0px 10px;}
     .menu{
-        background-color: #000;
+        background-color: #010A13 ; 
         position: fixed;
         width: 100%; height: min-content;
         transition: all 1s cubic-bezier(.215, .61, .355, 1); 
