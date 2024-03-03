@@ -666,7 +666,7 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
     .poster__content-elenco{width: 50%; height: auto;}
     .poster__img-elenco{width: 50%; height: 220vh; margin: auto;}
     .tabella_personaggi {table-layout: fixed; width: 100%; padding: 50px; border: 0px solid rgb(255, 255, 255); border-collapse: collapse; }
-    table{border-collapse: collapse; margin-left: -17.5px;}
+    table{border-collapse: collapse; margin-left: -17.5px; margin: auto;}
     .poster-elenco{margin-bottom: 200px;  height: fit-content;}
     .akali__img{margin: auto; width: 100%;padding: 0;  animation-name: nulla; animation-duration: 20s; animation-iteration-count: infinite; animation-timing-function: linear}
     .akali__img img{width: 80%; margin: auto; }
