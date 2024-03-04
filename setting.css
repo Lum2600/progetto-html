@@ -300,19 +300,16 @@ table{margin: auto; border-collapse: collapse;}
 .carousel-cell{
     height: 350px;
     width: 350px; 
-    background-color: #666;
     border-radius: 100%;
     line-height: 350px;
     text-align: center;
     margin-right: 40px;
-    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/gwen.jpg');
     background-size: cover  ;
     margin-right: 20px; 
-    transition: 1.5s;
+    
+    transition: 0.2s;
 }
-.carousel-cell:hover{background: linear-gradient(0deg, rgba(10, 20, 40, 0.9), rgba(10, 20, 40, 1)); }
-
-
+.carousel-cell:hover{background: rgba(10, 20, 40); }
 
 
 
