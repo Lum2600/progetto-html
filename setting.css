@@ -295,12 +295,13 @@ table{margin: auto; border-collapse: collapse;}
 /* ! carousel */
 
 
+
 .main-carousel{padding: 40px 0px 40px 0; }
 
 .carousel-cell{
     height: 350px;
     width: 350px; 
-    border-radius: 100%;
+
     line-height: 350px;
     text-align: center;
     margin-right: 40px;
@@ -309,7 +310,8 @@ table{margin: auto; border-collapse: collapse;}
     
     transition: 0.2s;
 }
-.carousel-cell:hover{background: rgba(10, 20, 40); }
+.carousel-cell:hover{background: rgba(10, 20, 40); box-shadow: 0px 0px 5px 5px goldenrod }
+.flickity-slider{padding: 20px}
 
 
 
