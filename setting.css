@@ -72,7 +72,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
 .hero{
     height: 100vh;
     display: flex; width: 100%; align-items: top;
-    background: linear-gradient(0deg,  rgba(0, 0, 0, 0.8), rgba(1, 10, 19, 1)), url('immagini/gwen.jpg');
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.8), rgba(1, 10, 19, 1)), url('immagini/gwen.jpg');
     background-size: cover  ;
     flex-wrap: wrap;
     align-items: center;
@@ -201,7 +201,7 @@ table{margin: auto; border-collapse: collapse;}
 .lore__content__img img:hover{transform: scale(1.2); box-shadow: 0px 0px 40px 20px grey; }
 .compra{ width: 100%; text-align: center; margin-top: 20px; padding-bottom: 40px;}
 .tasto{width: 50%; border-radius: 7%;   background-color: #e4fdfd; padding: 20px; color: #010A13; border: 1px solid #e4fdfd;  }
-.tasto:hover{animation-name: compra; animation-duration: 4s; animation-iteration-count: infinite; animation-timing-function: linear}  
+.tasto:hover{animation-name: compra; animation-duration: 2s; animation-iteration-count: infinite;}  
 
 
 
@@ -290,84 +290,76 @@ table{margin: auto; border-collapse: collapse;}
 
 
 
-
-
-/* ! carousel */
-
-
-
-.main-carousel{padding: 40px 0px 40px 0; }
-
-.carousel-cell{
-    height: 350px;
-    width: 350px; 
-
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background-size: cover  ;
-    margin-right: 20px; 
+.con{background: linear-gradient(0deg,#e4fdfd, #010A13, rgba(0,0,0) ); padding: 100px; }
+.con__griglia{display: grid; grid-template-columns: repeat(4, 1fr);  gap:50px; max-width: 90%; margin: auto;}
+.item{
     
-    transition: 0.2s;
+    font-family: "Kanit";
+    height: 200px; display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px 1px black;
+    transition: .3s;
+
 }
-.carousel-cell:hover{background: rgba(10, 20, 40); box-shadow: 0px 0px 5px 5px goldenrod }
-.flickity-slider{padding: 20px}
+.item a{color: white; text-decoration: none;  }
 
+.item:hover{ transform: scale(1.2); box-shadow: 0px 0px 20px 1px black; border: 10px solid goldenrod }
+.item:hover a{color: goldenrod;}
 
-
-
+ 
 
 
 .bc_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/bandle-city.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/bandle-city.jpg');
     background-size: cover  ;
 }
 .bilgewater_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/bilgewater.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/bilgewater.jpg');
     background-size: cover  ;
 }
 .demacia_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/demacia.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/demacia.jpg');
     background-size: cover  ;
 }
 .isole_ombra_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/isole_ombra.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/isole_ombra.jpg');
     background-size: cover  ;
 }
 .frejlord_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/frejlord.jpg');
-    background-size: cover  ;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/frejlord.jpg');
+    background-size: cover;
 }
 .void_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/void.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/void.jpg');
     background-size: cover  ;
 }
 .ionia_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/ionia.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/ionia.jpg');
     background-size: cover  ;
 }
 .ixtal_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/ixtal.jpeg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/ixtal.jpeg');
     background-size: cover  ;
 }
 .noxus_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/noxus.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/noxus.jpg');
     background-size: cover  ;
 }
 .piltover_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/piltover.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/piltover.jpg');
     background-size: cover  ;
 }
 .shurima_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/shurima.png');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/shurima.png');
     background-size: cover  ;
 }
 .targon_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/targon.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/targon.jpg');
     background-size: cover  ;
 }
 .zaun_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/zaun.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('/immagini/zaun.jpg');
     background-size: cover  ;
 }
 
@@ -674,7 +666,7 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
     .akali__img{margin: auto; width: 100%;padding: 0;  animation-name: nulla; animation-duration: 20s; animation-iteration-count: infinite; animation-timing-function: linear}
     .lore__content__img{display: block; width: 100%;box-shadow: 0px 0px  0px #ffffff;}
     .lore__content__img img{display: block; width: 50%; height: 100%; transform: scaleX(1);box-shadow: 0px 0px 100px #ffffff;}
-
+    .griglia{display: grid; grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );  gap:50px; max-width: 90%; margin: auto;}
 }
 
 /* ! telefono verticale */
@@ -754,7 +746,7 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
     .lore__content__img img{display: block; width: 50%; height: 100%; transform: scaleX(1);box-shadow: 0px 0px 100px #ffffff;}
     .akali__img{margin: auto; width: 100%;padding: 0;  animation-name: nulla; animation-duration: 20s; animation-iteration-count: infinite; animation-timing-function: linear}
     .akali__img img{width: 100%; margin: auto; }
-    
+    .griglia{display: grid; grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );  gap:50px; max-width: 90%; margin: auto;}
 
 
 
@@ -788,7 +780,7 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
 .mt-4{margin-top: 250px; }
 .mt-6{margin-top: 400;}
 .mt-5{margin-top: 1000px; }
-.mb{height: 200px; background-color: #000;}
+.mb{height: 200px; background-color: #000; }
 
 
 *
