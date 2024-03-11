@@ -99,7 +99,7 @@ ul {margin-block-start: 0; margin-block-end: 0;padding-inline-start: 0px;display
     
 
 }
-
+.poster__content p{text-align: justify;}
 .poster__content{width: 35%; padding:50px; transition: .5s;}
 .poster__content h3{text-align: center;}
 .poster__img{width: 65%; height:100%;box-shadow: 20px 20px 50px grey;transition: .5s;}
@@ -142,7 +142,7 @@ table{margin: auto; border-collapse: collapse;}
 .poster__content-elenco{width: 40%; padding:50px; padding-top: 0; padding-bottom: 0%; margin: auto;}
 .poster__content-elenco h3{text-align: center; padding-top: 0px; margin-top: 20px; padding-bottom: 0; margin-bottom: 0;}
 .poster__img-elenco{width: 60%; height: cover;   box-shadow: 0px 0px 20px 20px grey;transition: .5s;}
-.poster__content-elenco p{font-size: 15px; text-align: center;}
+.poster__content-elenco p{font-size: 15px; text-align: justify;}
 
 
 
@@ -295,79 +295,99 @@ table{margin: auto; border-collapse: collapse;}
 /* ! carousel */
 
 
-
-.main-carousel{padding: 40px 0px 40px 0; }
+.carosello{display: flex;}
+.main-carousel{padding: 40px 0px 40px 0; width: 80%; margin: auto;}
 
 .carousel-cell{
-    height: 350px;
-    width: 350px; 
-
+    height: 340px;
+    width: 340px; 
+    margin-right: 40px;
     line-height: 350px;
     text-align: center;
-    margin-right: 40px;
     background-size: cover  ;
-    margin-right: 20px; 
+    margin-top: 5px;
+     
+  
     
-    transition: 0.2s;
+    transition: 0.5s;
 }
-.carousel-cell:hover{background: rgba(10, 20, 40); box-shadow: 0px 0px 5px 5px goldenrod }
-.flickity-slider{padding: 20px}
+
+.carousel-cell.is-selected {
+    background: rgb(255, 255, 255); transform: scale(1.2);
+  }
+.carousel-cell.is-selected a {
+    animation-name: bordi; animation-duration: 0.5s; animation-iteration-count: infinite; animation-timing-function: linear; color: black;
+  }
+.carousel-cell:hover{background: rgb(0, 0, 0);  animation-name:none; }
+.carousel-cell a{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; border: 1px solid white; padding: 10px; animation-name: none; animation-duration: 0.5s; animation-iteration-count: infinite; animation-timing-function: linear}
+.carousel-cell:hover a{color: #fdfdfd;border: 1px solid rgb(255, 255, 255);}
 
 
+@keyframes bordi {
+
+    0%{border: 1px solid rgb(0, 0, 0);}
+    20%{border: 2px solid rgb(0, 0, 0);}
+    40%{border: 3px solid rgb(0, 0, 0);}
+    60%{border: 4px solid rgb(0, 0, 0);}
+    80%{border: 3px solid rgb(0, 0, 0);}
+    100%{border: 2px solid rgb(0, 0, 0);}
+
+    
+}
 
 
 
 
 .bc_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/bandle-city.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/bandle-city.jpg');
     background-size: cover  ;
 }
 .bilgewater_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/bilgewater.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/bilgewater.jpg');
     background-size: cover  ;
 }
 .demacia_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/demacia.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/demacia.jpg');
     background-size: cover  ;
 }
 .isole_ombra_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/isole_ombra.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/isole_ombra.jpg');
     background-size: cover  ;
 }
 .frejlord_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/frejlord.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/frejlord.jpg');
     background-size: cover  ;
 }
 .void_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/void.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/void.jpg');
     background-size: cover  ;
 }
 .ionia_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/ionia.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/ionia.jpg');
     background-size: cover  ;
 }
 .ixtal_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/ixtal.jpeg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/ixtal.jpeg');
     background-size: cover  ;
 }
 .noxus_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/noxus.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/noxus.jpg');
     background-size: cover  ;
 }
 .piltover_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/piltover.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/piltover.jpg');
     background-size: cover  ;
 }
 .shurima_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/shurima.png');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/shurima.png');
     background-size: cover  ;
 }
 .targon_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/targon.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/targon.jpg');
     background-size: cover  ;
 }
 .zaun_bg{
-    background: linear-gradient(0deg, rgba(0,0,0, 0.2), rgba(0,0,0, 0.8)), url('/immagini/zaun.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url('/immagini/zaun.jpg');
     background-size: cover  ;
 }
 
@@ -380,12 +400,12 @@ table{margin: auto; border-collapse: collapse;}
 
 
 
-.hero p{ color: white; padding: 0; margin: 0 ; text-align: center;}
+.hero p{ color: white; padding: 0; margin: 0 ; text-align: justify; letter-spacing: 1px; word-spacing: 2px;}
 .hero h1{ text-align: center;  color: goldenrod;  font-family: Bebas Neue;width: 100%; margin-bottom: 0px; }
 .hero .tit{margin: auto;  }
 .hero .testo{margin: auto; width: 100%;  margin-top: 0px;}
 .tit h1{text-align: center;}
-.testo p{margin-top: 30px; width: 50%; margin: auto;}
+.testo p{margin-top: 30px; width: 50%; margin: auto; }
 
 
 
@@ -674,7 +694,7 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
     .akali__img{margin: auto; width: 100%;padding: 0;  animation-name: nulla; animation-duration: 20s; animation-iteration-count: infinite; animation-timing-function: linear}
     .lore__content__img{display: block; width: 100%;box-shadow: 0px 0px  0px #ffffff;}
     .lore__content__img img{display: block; width: 50%; height: 100%; transform: scaleX(1);box-shadow: 0px 0px 100px #ffffff;}
-
+    
 }
 
 /* ! telefono verticale */
@@ -757,7 +777,7 @@ p{line-height: 20px; color: #666; font-variant: 300px; font-family: kanit}
     
 
 
-
+    
 
 
 
